@@ -82,17 +82,17 @@
 #         b=b+[i]
 # print(list1)
 
-# fib1=0
-# fib2=1
+# fib1=0 
+# fib2=1 
 # num=int(input("enter the number:"))
-# for i in range(0,num):
+# for i in range(0,num):  
 #     if i<=1:
 #         num1=i
 #     else:
-#         num1=fib1+fib2
+#         num1=fib1+fib2  
 #         fib1=fib2
 #         fib2=num1
-#     print(num1)
+#     print(num1) 
 
 
 

@@ -11,10 +11,10 @@
 
 list1=[1,0,3,0,9,13]
 list2=[]
-list3=[]
+# list3=[]
 for i in list1:
     if i==0:
         list2=list2+[i]
-    else:
-        list3=list3+[i]
-print(list3+list2)   
+    # else:
+    #     list3=list3+[i]
+print(list1)   
