@@ -37,6 +37,8 @@
 list1=["flower","flow","flight"]
 letters=""
 longest_word=""
+largest_word=""
+max_largest_word=""
 for word in list1:
     # print(word)
     for char in word:
@@ -44,11 +46,17 @@ for word in list1:
         if char not in  letters:
             letters=letters+char
             # print(letters)
-        if char  in letters:
-                # print(char)
+        else:
             longest_word=longest_word+char
-    # for char1 in longest_word:
-        # print(char1)
-print(longest_word)
-print(letters)
+for char1 in longest_word:
+    # print(char1)
+    if char1 not in largest_word:
+        largest_word=largest_word+char1
+                
+    else:
+        max_largest_word=max_largest_word+char1
+print(max_largest_word)
+# print(largest_word)    
+# print(longest_word)
+# print(letters)
 
