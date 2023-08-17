@@ -1,0 +1,50 @@
+.title1{
+background-color:#3d3d3c;
+text-align:center;
+color:#ccccc1 ;
+text-shadow:rgb(121, 171, 221);
+}
+
+.title2{
+    font-size:20px;
+    text-align:center;
+    
+}
+.title3{
+    background-color: #5f5c56;
+    margin-inline :400px;
+    color:black ;
+}
+input,textarea,body,select,option{
+    background-color:#ccccc1;
+    text-align: center;
+    padding: 5px;
+
+}
+.table1{
+    margin-left: 325px;
+    
+}
+.Bigtitle{
+    text-align: center;
+    background-color: #5f5c56;
+    margin-inline :300px;
+}
+.table2 table{
+    margin-left: 275px;
+}
+.table3 table{
+    margin-left: 435px;
+}
+.table4 table{
+    margin-left: 425px;
+}
+.table4 table{
+    margin-left: 350px;;
+}
+.place input{
+    margin-right:850px;
+}
+.Date input{
+    margin-right:905px;
+}
