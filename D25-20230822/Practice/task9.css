@@ -1,0 +1,49 @@
+.header{
+
+    padding:10px 0px 10px 0px ;
+    border: 1px solid black;
+    margin:0px 0px 0px 0px;
+    text-align: center;
+
+}
+.firstbox{
+    display: inline-block;
+    background-color: aqua;
+    padding:0px 0px 0px 0px ;
+    margin:0px 0px 0px 0px;
+
+}
+.intro{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 120px 300px 120px 300px;
+    margin: 10px 0px 0px 10px;
+    /* vertical-align: top; */
+    text-align: center;
+
+}
+
+.heroimg {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 60px 270px 50px 285px;
+    margin: 10px 0px 0px 5px;
+    vertical-align: top;
+    text-align: center;
+}
+.code{
+    /* display:inline; */
+    padding:50px 0px 50px 0px;
+    margin:10px 0px 0px 0px;
+    border: 1px solid black;
+    vertical-align:top;
+    text-align: center;
+
+}
+.secondbox{
+    display: inline-block;
+    background-color: aqua;
+    padding:0px 0px 0px 0px ;
+    margin:0px 0px 0px 0px;
+    vertical-align:top;
+}

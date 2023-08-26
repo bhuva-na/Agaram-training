@@ -84,38 +84,39 @@
 
 
 #DELECTING THE NUM BY REPLACING
-list1=[10,20,30,40]
-to_print=20
-index=4
-for i in range(len(list1)):
-  if list1[i]==to_print:
-    index=i
-if index!=-1:
-  for x in range(index,len(list1)-1):
-    list1[x]=list1[x+1]
-  list1[len(list1)-1]=None
-#   print(list1)
-  list1=list1[]
+# list1=[10,20,30,40]
+# to_print=20
+# index=4
+# for i in range(len(list1)):
+#   if list1[i]==to_print:
+#     index=i
+# if index!=-1:
+#   for x in range(index,len(list1)-1):
+#     list1[x]=list1[x+1]
+#   list1[len(list1)-1]=None
+# #   print(list1)
+#   list1=list1[]
 
-print(list1) 
+# print(list1) 
 #         2 3 5 9  9
 # numbers=[5,9,2,3,9]
-
-
+num1=[]
+for i in range(5):
+  number=input(f"enter the number{i+1}")
 #SORTING
-# def sort(num):
-#   n=len(num)
-#   for i in range(n):
-#     #print(i)
-#     for j in range(0,n-i-1):
-#       #print(j)
+def sort(num):
+  n=len(num)
+  for i in range(n):
+    print(i)
+    for j in range(0,n-i-1):
+      print(j)
 #       #      1    1+1
 #       #      5        3
-#       if num[j]>num[j+1]:               #FOR DECENTING <
+      if num[j]>num[j+1]:               #FOR DECENTING <
 #         #  3        5         3  , 5
-#         num[j],num[j+1]=num[j+1],num[j]
-# sort(numbers)
-# print(numbers)
+        num[j],num[j+1]=num[j+1],num[j]
+sort(numbers)
+print(numbers)
   
 #     list1.append(to_print)
 # print(list1)

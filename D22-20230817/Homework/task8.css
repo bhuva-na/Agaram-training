@@ -1,0 +1,90 @@
+.outer{
+    width:100%;
+    background-color:rgb(7, 6, 6);
+    border:1px solid purple;
+}
+.header{
+    /* display: inline-block; */
+    border: 1px solid rgb(231, 187, 240);
+    padding:3% 2% 3% 2%;
+    background-color: rgb(231, 187, 240);
+    margin: 1% 1% 0% 1%;
+    text-align: center;
+}
+.navigationbar{
+    padding:2% 1% 2% 1%;
+    background-color: rgb(104, 37, 117);
+    margin: 0% 1% 0% 1%;
+    text-align: center;
+    border:1px solid rgb(104, 37, 117);
+}
+.leftpanel{
+    display:inline-block;
+    padding:13% 14% 13% 14%;
+    margin: 0% -1% 0% 1%;
+    text-align: center;
+    border:1px solid rgb(236, 26, 236);
+    border-right: 0px;
+    background-color:rgb(236, 26, 236);               
+}
+.aside{
+    display:inline-block;
+    padding:13% 32.4% 13% 31%;
+    margin: 0% 0% 0% 0%;
+    text-align: center;
+    border:1px solid rgb(233, 240, 240);
+    /* border-left:0px; */
+    background-color:rgb(233, 240, 240);   
+}
+.footer{
+    border: 1px solid rgb(187, 11, 223);
+    padding:2% 1% 2% 1%;
+    background-color: rgb(187, 11, 223);
+    margin: 0% 1% 1% 1%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .box3 {
+
+    border: 1px solid white;
+    padding: 0px 226px 20px 0px;
+    background-color: rgba(131, 33, 151, 0.822);
+    margin: 39px 247px 1px 299px;
+    text-align: center;
+}
+.box4 {
+    display: inline;
+    border: 1px solid white;
+    padding: 0px 486px 280px 0px;
+    background-color:rgb(252, 246, 252);
+    margin: 47px -224px 195px 482px;
+}
+.box5 {
+    display: inline;
+    border: 1px solid white;
+    padding: 0px 153px 280px 0px;
+    background-color: rgb(215, 98, 219);
+    margin: -17px -185px -10px -499px;
+}
+.box7 {
+    display: block;
+    border: 1px solid white;
+    padding: 0px 20px 61px 6px;
+    background-color:rgb(129, 52, 129);
+    margin: 279px 243px 81px 298px;
+}  */

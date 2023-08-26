@@ -1,0 +1,74 @@
+.outerbox{
+    width: 100%;
+    background-color:rgb(140, 146, 146);
+
+}
+.header{
+    background-color:cadetblue;
+    padding:1% 2% 1% 2%;
+    border:1px solid black;
+}
+h4{
+    text-align: center;
+}
+.introcopy{
+    background-color:cadetblue;
+    display:inline-block;
+    padding:8% 25% 8% 25%;
+    border: 1px solid black;
+    margin:1% 0% 0% 2%;
+}
+.sidebox{
+    display:inline-block;
+    width: 40%;
+    /* background-color: blue; */
+    vertical-align:top;
+    margin:1% 0% 0% 1%
+}
+    /* padding:3% 20% 3% 20%;
+    border: 1px solid black;
+    margin:1% 1% 0% 1%;
+} */
+.heroimage{
+    background-color:cadetblue;
+    display:inline-block;
+    padding:11.5% 41% 11.5% 41%;
+    border: 1px solid black;
+    margin:0% 1% 0% 2%;
+
+}
+.calltoaction{
+    /* display:inline-block; */
+    padding:0% 40.5% 0% 41%;
+    border: 1px solid black;
+    margin:1% 1.5% 0% 2%;
+    background-color: yellow;
+}
+.features{
+    background-color:cadetblue;
+    /* display:inline-block; */
+    padding:4% 15% 4% 15%;
+    border: 1px solid black;
+    margin:1% 2% 0% 2%;
+}
+.movecopy{
+    display:inline-block;
+    padding:0% 25% 0% 25%;
+    border: 1px solid black;
+    margin:1% 0% 0% 2%;
+    background-color:cadetblue;
+}
+.calltoaction2{
+    background-color:rgb(255, 255, 4);
+    display:inline-block;
+    padding:0% 16% 0% 15.5%;
+    border: 1px solid black;
+    margin:1% 1.5% 0% 2%;
+}
+.footer{
+    background-color:cadetblue;
+    /* background-color: bisque; */
+    padding:1% 2% 1% 2%;
+    border:1px solid black;
+    margin-top:1%;
+}
