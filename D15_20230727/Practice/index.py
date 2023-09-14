@@ -12,9 +12,9 @@
 
 
 # indentifing list len and printing according to num1
-# list = ["a","b","c","d","e","f","g","h","i","j"]
-# for each in range(len(list)):
-#     print(each, list[each])
+list = ["a","b","c","d","e","f","g","h","i","j"]
+for each in range(1,len(list)):
+    print(each, list[each])
 
 
 #enumerate index and value printing according to index value 

@@ -1,0 +1,193 @@
+header{
+    width:100%;
+    text-align: center;
+    color:#ccccc1 ;
+    background-color:#3d3d3c;
+    padding:1% 0% 1% 0%;
+    text-transform: uppercase;
+}
+form .detail1 label{
+    color:#ccccc1 ;
+    background-color:#3d3d3c;
+    display:block;
+    border: 1px solid black;
+    /* padding: 1% 0% 1% 0%; */
+    font-size: larger;
+    margin:2% 30% 2% 30%;
+    text-align: center;
+}
+form .detail1 input{
+    
+    text-align: center;
+    font-size: larger;
+    margin:0% 40% 0% 40%;
+    padding:1%;
+
+}
+form .detail1 textarea{
+   
+    text-align: center;
+    font-size: larger;
+    margin:0% 42% 0% 42%;
+    padding:1%;
+}
+
+.titles{
+    /* width: 100%; */
+    text-align: center;
+    color:#ccccc1 ;
+    background-color:#3d3d3c;
+    padding:0% 0% 0% 0%;
+    margin:2% 20% 0% 20%;
+    text-transform: uppercase;
+}
+
+form .detail2 table{
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 3%; */
+    border-color: black;
+}
+form .detail2 table th,tr,td{
+    padding: 0% 0% 0% 0%;
+}
+form .detail2 table input,option,textarea{
+    padding: 20% 0% 20% 0%;
+    margin:0% 0% 0% 0%;
+    border-color: white;
+    text-align: center;
+}
+form .detail3 table{
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 3%; */
+    border-color: black;
+    /* border: 1px solid black; */
+}
+form .detail3 table input,option,textarea{
+    padding: 20% 0% 20% 0%;
+    margin:0% 0% 0% 0%;
+    border-color: white;
+    text-align: center;
+    /* border: 1px solid black; */
+    
+}
+form .detail4 table{
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 3%; */
+    border-color: black;
+    /* border: 1px solid black; */
+}
+form .detail4 table input,option,textarea{
+    padding: 20% 0% 20% 0%;
+    margin:0% 0% 0% 0%;
+    border-color: white;
+    text-align: center;
+    /* border: 1px solid black; */
+    
+}
+form .detail4 .textarea{
+    padding:20% 0% 20% 0%;
+}
+
+
+form .detail5 table{
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 3%; */
+    border-color: black;
+    /* border: 1px solid black; */
+}
+form .detail5 table input,option,textarea{
+    padding: 20% 0% 20% 0%;
+    margin:0% 0% 0% 0%;
+    border-color: white;
+    text-align: center;
+    /* border: 1px solid black; */
+    
+}
+.detail6 {
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 3%; */
+    border-color: black;
+    /* border: 1px solid black; */
+}
+.detail6  input,option,textarea{
+    margin-top: 2%;
+    padding: 5% 8% 5% 8%;
+    margin-inline:35%;
+    /* margin-right: auto; */
+    border-color: white;
+    text-align: center;
+    /* border: 1px solid black; */
+    
+}
+form .detail7 table{
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 3%; */
+    border-color: black;
+    /* border: 1px solid black; */
+}
+form .detail7 table input,option,textarea{
+    padding: 15% 15% 15% 15%;
+    margin:0% 0% 0% 0%;
+    border-color: white;
+    text-align: center;
+    /* border: 1px solid black; */
+    
+}
+
+form .detail7 table .none{
+    padding: 3% 0% 3% 0%;
+    margin:0% 0% 0% 0%;
+    border-color: white;
+    text-align: center;
+}
+
+.detail8 table{
+    margin-top: 2%;
+   
+    /* padding: 3%; */
+    border-color: black;
+    /* border: 1px solid black; */
+}
+.detail8 input,option,textarea{
+    
+    padding: 0% 0% 0% 0%;
+    margin:0% 0% 0% 0%;
+    border-color: white;
+    text-align: center;
+    /* border: 1px solid black; */
+    
+}
+.detail8 .textarea{
+    padding:3% 4% 3% 4%;
+    margin-inline: 38%;
+    margin-top: 2%;
+    border: 1px solid black;
+}
+
+form .place label{
+    font-size:larger;
+   
+}
+form .place input{
+    margin-bottom: 2%;
+}
+
+form .Date label{
+    font-size:larger;
+   
+}
+form .Date input{
+    margin-bottom: 2%;
+}

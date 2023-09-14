@@ -1,6 +1,6 @@
 name1=input("enter the name:")
-friends_names=[{"name":"shali","place":"cholacal","hobbies":[" drawing"," reading"," dancing"]},
-{"name":"renisha","place":"marthandam","hobbies":[" music","gardening ","drawing "]},
+friends_names=[{"name":"shali","place":"cholacal","hobbies":["drawing","reading","dancing"]},
+{"name":"renisha","place":"marthandam","hobbies":["music","gardening ","drawing"]},
 {"name":"sobith","place":"kaliyakavelai ","hobbies":[" movies"," playing"," travelling"]},
 {"name":"bhuvana","place":"vellamadam","hobbies":["craft","drawing ","gardening "]},
 {"name":"sam","place":" monday market","hobbies":[" cricket","movie ","travelling "]},

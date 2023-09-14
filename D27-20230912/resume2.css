@@ -1,0 +1,29 @@
+header{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.detail1 h2{
+    color:#ccccc1 ;
+    background-color:#3d3d3c;
+    display:block;
+    border: 1px solid black;
+    /* padding: 1% 0% 1% 0%; */
+    font-size: larger;
+    margin:2% 30% 2% 30%;
+    text-align: center;
+}
+.detail1 h3{
+    margin-left:45%;
+    margin-right:45%;
+}
+
+.detail1 p{
+    margin-left:16%;
+    margin-right: 16%;
+    padding:5% 3% 5% 3%;
+    font-size: larger;
+    font-weight: bolder;
+    border:4px solid black;
+}
