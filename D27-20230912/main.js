@@ -1,3 +1,19 @@
+
+// var name=true
+// localStorage.setItem("name","true");
+// var a=localStorage.getItem("name")
+// console.log(typeof(a))
+
+
+var list=["a","b","c"]
+var name=JSON.stringify(list);
+localStorage.setItem("letters",name)
+var a=localStorage.getItem("letters")
+var clist=JSON.parse(a)
+console.log(clist[1])
+// sessionStorage.setItem("letters",name)
+
+
 var a=5;
 var b="agaram";
 var c= true
@@ -138,17 +154,27 @@ let detail={
 //         console.log()
 // }
 
-my_resume.Educational_Qualification[3]={level:"ME",instution_name:"arunachla",
-                                        passed_year:2026,
-                                        percentage:86.40}
-var a=my_resume.Educational_Qualification
-// console.log(a)
-function education(educationalquali){
-        for(i=0;i<educationalquali.length;i++)
-        {
+// my_resume.Educational_Qualification[3]={level:"ME",instution_name:"arunachla",
+//                                         passed_year:2026,
+//                                         percentage:86.40}
+// var a=my_resume.Educational_Qualification
+// function education(educationalquali){
+//         for(i=educationalquali.length-1;i>=0;i--)
+//         {
                
-                console.log(i+1,educationalquali[i].level)
-        }
-}
-education(a)
+//                 console.log(i,educationalquali[i].level)
+//         }
+// }
+// education(a)
 
+// var a=my_resume.projects[0].MiniProject.frontEnd
+//         // console.log(a)
+
+//         for(i=0;i<a.length;i++){
+//                 // console.log(a[i])
+//                 if(a[i]==CSS){
+//                         console.log(a[i])
+//                 }
+//                 // console.log(a[i]);
+//         }
+       

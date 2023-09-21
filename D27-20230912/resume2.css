@@ -27,3 +27,91 @@ header{
     font-weight: bolder;
     border:4px solid black;
 }
+.titles{
+    /* width: 100%; */
+    text-align: center;
+    color:#ccccc1 ;
+    background-color:#3d3d3c;
+    padding:0% 0% 0% 0%;
+    margin:2% 20% 0% 20%;
+    text-transform: uppercase;
+}
+.detail2 table{
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 3%; */
+    border-color: black;
+}
+
+table th,td{
+    text-align: center;
+}
+
+.detail3 table{
+    margin-top: 2%;
+    margin-left:25%;
+    margin-right:25%;
+    /* padding: 3%; */
+    border-color: black;
+}
+.detail4 table{
+    margin-top: 2%;
+    margin-left: 40%;
+    margin-right: 40%;
+    /* padding: 3%; */
+    border-color: black;
+}
+
+.detail4 table th,td{
+    margin: 0% 15% 0% 15%;
+    text-align: center;
+}
+
+.detail5 table{
+    margin-top: 2%;
+    margin-left: 40%;
+    margin-right: 40%;
+    /* padding: 3%; */
+    border-color: black;
+}
+
+.detail5 h4{
+    text-align: center;
+}
+
+.detail6 table{
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    /* padding: 3%; */
+    border-color: black;
+}
+
+.detail7 p{
+    border: 2px solid black;
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    /* padding: 3%; */
+    border-color: black;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.place {
+    display: inline;
+   
+}
+form .place input{
+    margin-bottom: 2%;
+}
+
+form .Date label{
+    font-size:larger;
+   
+}
+form .Date input{
+    margin-bottom: 2%;
+}

@@ -1,0 +1,67 @@
+/* *{
+    width:0%;
+    height:0%;
+    box-sizing: border-box;
+    #445b62
+    #7a7b91
+    #9195a1
+    #d7e1df
+} */
+
+body{
+    background-color:#262930;
+    height: 100%;
+
+}
+
+
+
+#innersection{
+    width: 40%;
+    height:400px;
+    background-color: #445b62;
+    margin:9% 27% 0% 27%;
+    padding:3% 0% 0% 0%;
+    border-radius: 2%;
+}
+
+#innersection h1{
+    display:flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+#innersection input{
+    margin-top: 5%;
+    margin-left: 14%;
+    padding:1% 4% 1% 4%;
+    font-size: large;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #9195a1;
+
+}
+#innersection button{
+    margin-left: 2%;
+    padding:1% 4% 1% 4%;
+    font-size: large;
+    border-radius: 5px;
+    background-color: #7a7b91 ;
+    
+}
+#listofwords{
+    color: aliceblue;
+    font-size: 20px;
+    margin-top:10px;
+ }
+
+ #listofwords p{
+    margin:5% 15%;
+ }
+  
+ #listofwords p:hover{
+    cursor: pointer;
+ }
+ #innersection button:hover{
+    cursor: pointer;
+ }
