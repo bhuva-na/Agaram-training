@@ -1,12 +1,80 @@
-label{
-    display: block;
+
+/* ............register css............ */
+
+            #Register label{
+                display: block;
+                margin-top:5%;
+                margin-left: 8%;
+                margin-right: auto;
+                text-transform:uppercase;
+            }
+
+            #Register input{
+                margin-top:3%;
+                display:block;
+                padding:1%;
+            }
+
+            #Register button{
+                margin-top:3%;
+                margin-left:8%;
+            }
+
+            #Register{
+                margin-top:5%;
+                margin-left: 40%;
+                margin-right: auto;
+            }
+
+
+/* .....................login css.......... */
+
+#login{
     margin-top:5%;
     margin-left: 40%;
     margin-right: auto;
 }
 
-#home{
+#login label{
+    display: block;
     margin-top:5%;
-    margin-left: 40%;
+    margin-left: 8%;
     margin-right: auto;
+    text-transform:uppercase;
+}
+
+#login input{
+    margin-top:3%;
+    display:block;
+    padding:1%;
+}
+
+#login button{
+    margin-top:3%;
+    margin-left:8%;
+}
+
+
+/* ................home css............. */
+
+
+#home{
+    margin-left:40%;
+    margin-right: auto;
+}
+
+#home h1{
+    display: inline;
+    margin-left:3%;
+}
+
+#home button{
+    display:block;
+    margin-top:3%;
+    margin-left:15%;
+}
+
+#home table{
+    margin-top:5%;
+    margin-left:5%;
 }

@@ -18,31 +18,31 @@
 
 
 // .....................login Code .....................
-        function login(){
-            let user_detail=document.getElementById("email").value
-            let Password=document.getElementById("password").value
+function login(){
+    let user_detail=document.getElementById("email").value
+    let Password=document.getElementById("password").value
 
-            // alert(user_detail)
-            // alert(Password)
-        let a=JSON.parse(localStorage.getItem("list"))
-            // console.log(a)
-            for(i=0;i<a.length;i++){
-                // console.log(a[i].email)
-                // console.log(a[i].password)
-                if ((a[i].email==user_detail) && (a[i].password==Password))
-                {
-                    alert("login sucessfully")
-                    document.getElementById("userdetail").style.display="none"
-                    document.getElementById("outer").style.display="block"
-                    document.getElementById("register").style.display="none"
-                    document.getElementById("wel").innerHTML=`${a[i].name}`
-                    localStorage.setItem("loggedin",true)
-                    localStorage.setItem("logname",a[i].name)
-                    // console.log()
-                    display()
-            }
-        }
-        }
+    // alert(user_detail)
+    // alert(Password)
+let a=JSON.parse(localStorage.getItem("list"))
+    // console.log(a)
+    for(i=0;i<a.length;i++){
+        // console.log(a[i].email)
+        // console.log(a[i].password)
+        if ((a[i].email==user_detail) && (a[i].password==Password))
+        {
+            alert("login sucessfully")
+            document.getElementById("userdetail").style.display="none"
+            document.getElementById("outer").style.display="block"
+            document.getElementById("register").style.display="none"
+            document.getElementById("wel").innerHTML=`$a[i].name`
+            localStorage.setItem("loggedin",true)
+            localStorage.setItem("logname",a[i].name)
+            // console.log()
+            display()
+    }
+}
+}
 
 
 
@@ -74,6 +74,7 @@
         document.getElementById("outer").style.display="block";
         document.getElementById("register").style.display="none"
         document.getElementById("wel").innerHTML=localStorage.getItem("logname")
+        display()
         }
     }
 
@@ -105,8 +106,8 @@
             name:user_name
 
         })
-    let parse_data=JSON.stringify(parsedata);
-    localStorage.setItem("list",parse_data);
+        let parse_data=JSON.stringify(parsedata);
+        localStorage.setItem("list",parse_data);
     // let display=JSON.parse(localStorage.getItem("list"))
     // console.log(list)
 
@@ -133,7 +134,8 @@
     // console.log(user_list[0])
     //   console.log(user_list)
     let html_data=""
-        for(i=0;i<user_list.length;i++){
+    
+    for(i=0;i<user_list.length;i++){
             html_data=html_data+`<tr>
             <td>${user_list[i].name}</td>
             <td>${user_list[i].email}</td>
