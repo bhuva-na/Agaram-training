@@ -1,4 +1,7 @@
 
+
+
+
 function register(){
     let reg_name=document.getElementById("name").value
     let reg_email=document.getElementById("Email").value
