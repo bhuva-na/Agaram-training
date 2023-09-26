@@ -1,7 +1,7 @@
 
 /* ............register css............ */
 
-            #Register label{
+            #regForm label{
                 display: block;
                 margin-top:5%;
                 margin-left: 8%;
@@ -9,18 +9,18 @@
                 text-transform:uppercase;
             }
 
-            #Register input{
+            #regForm input{
                 margin-top:3%;
                 display:block;
                 padding:1%;
             }
 
-            #Register button{
+            #regForm button{
                 margin-top:3%;
                 margin-left:8%;
             }
 
-            #Register{
+            #regForm{
                 margin-top:5%;
                 margin-left: 40%;
                 margin-right: auto;
