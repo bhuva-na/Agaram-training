@@ -11,33 +11,43 @@ const firebaseConfig = {
     
    
     
-    // initialize firebase
+  // initialize firebase
     firebase.initializeApp(firebaseConfig);
+    var db = firebase.database();
+    var dataRef = db.ref("registeredUsers");
 
-// document.getElementById("home").addEventListener("submit",homeForm);
-// function homeForm(e){
-//   e.preventDefault();
 
+
+
+
+// ............refresh in script......
 
 function logged(){
-  let dataRef =firebase.database().ref("/registedusers");
-    dataRef.once('value').then(function(snapshot){
-    var data = snapshot.val();
-    // console.log(data)
-    let loginName=data[0].Name
-    document.getElementById("wel").innerHTML=loginName; 
-    display()
-    })}
+        dataRef.once('value').then(function(snapshot){
+        var data = snapshot.val();
+        // console.log(data)
+        if(localStorage.getItem("loggedin"))
+        {
+        // console.log("hi")
+        document.getElementById("wel").innerHTML=localStorage.getItem("logname")
+        display()
+      }
+    }
+  )
+}
 
 
+
+
+
+
+
+
+// ..............table............
 function display(){
-    let dataRef =firebase.database().ref("/registedusers");
     dataRef.once('value').then(function(snapshot){
     var data = snapshot.val();
-   
-   
     let html_data=""
-        
     for(i=0;i<data.length;i++){
             html_data=html_data+`<tr>
             <td>${data[i].Email}</td>
@@ -47,18 +57,20 @@ function display(){
             `
         }
     document.getElementById("table_update").innerHTML=html_data
-    // del(mail1)
-    })}
+   
+    }
+  )
+}
 
 
 
 
 
+// .........editData...................
 
 function editData(toedit){
 //     alert(toedit)
 // }
-    let dataRef =firebase.database().ref("/registedusers");
     dataRef.once('value').then(function(snapshot){
     var data = snapshot.val();
     for(i=0;i<data.length;i++){
@@ -77,9 +89,61 @@ function editData(toedit){
         data1.innerHTML = emailInput;
         data2.innerHTML=passInput;
         data3.innerHTML=nameInput;
-        firebase.database().ref("/registedusers").set([{
+       let updated ={
             Email:emailInput,
             Emailpassword:passInput,
             Name:nameInput,
-        }])
-}}})}
+        }
+        dataRef.once('value')
+        .then(function(snapshot) {
+            let data = snapshot.val();
+            // console.log(data);
+            if(data){
+                data.push(updated);
+                db.ref("registeredUsers").set(data);}
+            else{
+              db.ref(`registeredUsers/${0}`).set(updated);
+            }
+
+            del(toedit)
+          }
+
+          )
+        }
+      }
+     
+    }
+  )
+ }
+
+
+
+
+
+// ...........delete.........       
+ 
+function del(mail){
+        // alert(name)
+        // console.log(mail)
+        dataRef.once('value').then(function(snapshot){
+        var data = snapshot.val();
+        const wanted=[]
+        for(i=0;i<data.length;i++){
+            if(data[i].Email!=mail)
+                {
+              wanted.push(data[i])
+                }
+        }
+        db.ref("registeredUsers").set(wanted);
+        display()
+      })
+       
+    }
+
+
+
+// .........logout.........
+    function but2(){
+      localStorage.removeItem("loggedin")
+      window.location="login.html"
+    }
