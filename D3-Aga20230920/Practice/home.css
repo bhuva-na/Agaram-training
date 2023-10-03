@@ -1,0 +1,39 @@
+/* ................home css............. */
+
+
+#home{
+    /* margin-left:40%; */
+    /* margin-right: auto; */
+    /* border: 1px solid black; */
+}
+
+#home h1{
+    display: inline;
+    /* border: 1px solid gold; */
+    /* margin-left:5%;
+    margin-right:5%; */
+    padding:0%  42%;
+    width: 100%;
+}
+#home h2{
+    display: inline;
+}
+
+#home button{
+    display:block;
+    margin-top:3%;
+    margin-left:45%;
+    margin-right:43%;
+}
+
+#home table{
+    margin-top:5%;
+    margin-left:0%;
+    /* margin-right:5%; */
+}
+
+#home .drive{
+    /* border: 1px solid red; */
+    margin-left: 15%;
+    margin-right: 13%;
+}

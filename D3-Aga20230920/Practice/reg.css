@@ -1,80 +1,52 @@
 
 /* ............register css............ */
 
-            #regForm label{
-                display: block;
-                margin-top:5%;
-                margin-left: 8%;
-                margin-right: auto;
-                text-transform:uppercase;
-            }
 
-            #regForm input{
-                margin-top:3%;
-                display:block;
-                padding:1%;
-            }
+#regForm{
+    border: 1px solid black;
+    margin-top: 3%;
+    margin-left:20%;
+    margin-right:20%;
+    height:500px;
+    padding:5% 18% 2% 18%;
+   
+    opacity:10;
+    position:relative;
 
-            #regForm button{
-                margin-top:3%;
-                margin-left:8%;
-            }
-
-            #regForm{
-                margin-top:5%;
-                margin-left: 40%;
-                margin-right: auto;
-            }
-
-
-/* .....................login css.......... */
-
-#login{
-    margin-top:5%;
-    margin-left: 40%;
-    margin-right: auto;
+   
 }
 
-#login label{
-    display: block;
-    margin-top:5%;
-    margin-left: 8%;
-    margin-right: auto;
-    text-transform:uppercase;
+.section2{
+    background-image:url(../Practice/27230.jpg);
+    background-size: cover;
+    height: 400px;
+    opacity:-1;
+}
+/* .names{
+   
+position:absolute;
+right:30%;
+} */
+
+.d-grid button{
+    margin-top:6%;
 }
 
-#login input{
+#regForm input{
     margin-top:3%;
-    display:block;
-    padding:1%;
+    /* border-radius: 0%; */
 }
 
-#login button{
-    margin-top:3%;
-    margin-left:8%;
+#regForm label{
+    margin-top: 3%;
+    color:bisque;
+    font-size: larger;
+    text-transform: uppercase;
+}
+#regForm p{
+    margin-top: 3%;
 }
 
-
-/* ................home css............. */
-
-
-#home{
-    margin-left:40%;
-    margin-right: auto;
-}
-
-#home h1{
-    display: inline;
-    margin-left:3%;
-}
-
-#home button{
-    display:block;
-    margin-top:3%;
-    margin-left:15%;
-}
-
-#home table{
-    margin-top:5%;
-    margin-left:5%;
+body{
+    position: relative;
 }

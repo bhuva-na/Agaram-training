@@ -19,35 +19,186 @@ const firebaseConfig = {
                      
  
                     var db = firebase.database();
-
                     var dataRef = db.ref("registeredUsers");
- 
+                    var auth=firebase.auth()
+                    console.log(auth)
+
+
+
+
+
+
+
+
+
+
+
+
+//.............register..................                   
+const submitForm=()=>{
+    var name = document.getElementById("name").value;
+    var emailid = document.getElementById("Email").value;
+    var emailpassword = document.getElementById("password").value;
+    auth.createUserWithEmailAndPassword(emailid,emailpassword).then((result)=>{
+        alert("registed successfully")
+        console.log(result)
+    })
+    .catch((error)=>{
+        console.log(error.code);
+        console.log(error.message);
+    })
+}
+                   
+
+
+
+//..................login......................
+const loginForm=()=>{
+    var name = document.getElementById("name").value;
+    let user_detail=document.getElementById("Email").value
+    let Password=document.getElementById("password").value
+    auth.signInWithEmailAndPassword(user_detail,Password)
+    .then((result) => {
+      alert("loggedin successfully")
+     
+     
+      //getting currentuser details to set 
+    const user = firebase.auth().currentUser;
+               //   console.log(user)
+            var uid = user.uid;
+                console.log(uid)
+                let details={
+                useremail:user_detail,
+                user_name:name,
+                username:name,
+                loggedin:true,
+                }
+      db.ref('registeredUsers/'+uid).set(details);
+     
+       window.location="home.html"
+     ;
+    }) 
+    .catch((error) => {
+      alert("register first/invalid details")
+      console.log(error.code);
+      console.log(error.message);
+                      }
+                      );
+                    }
+    
+       
+     
+//.............refresh........................     
+      function logged(){
+        
+          // console.log(data)
+          firebase.auth().onAuthStateChanged((user) => {
+            if (user){
+              // console.log(user)
+              var uid = user.uid;
+              db.ref(`registeredUsers/${uid}`).once('value').then(function(snapshot)
+              {
+              var data = snapshot.val();
+              // console.log(uid)
+              // console.log(data)
+              if(data.loggedin==true)
+              {
+                document.getElementById("wel").innerHTML=data.username;
+                display()
+              }
+             
+            }
+          )
+        }
+      }
+    )
+    }
+
+         
+//................logout.........................         
+            function but2()
+            {
+              firebase.auth().onAuthStateChanged((user) => {
+                if (user) {
                  
-                      function loginForm(){
-                        // e.preventDefault();
-                        let user_detail=document.getElementById("Email").value
-                        let Password=document.getElementById("password").value
-                            dataRef.once('value').then(function(snapshot) {
-                            let data = snapshot.val();
-                            console.log(data);
-                            if(data){
-                                    let isuser=false;
-                                    for(i=0;i<data.length;i++){
-                                        if ((data[i].Email==user_detail) && (data[i].Emailpassword==Password))
-                                        {
-                                            alert("login successfully")
-                                            isuser=true;
-                                            localStorage.setItem("loggedin",true)
-                                            localStorage.setItem("logname",data[i].Name)
-                                            window.location="home.html";
-                                            break;
-                                        }
-                                        
-                                    }
-                                    if(isuser==false){
-                                        alert("register first");
-                                        window.location="reg.html"
-                                    }
+                  // console.log(user)
+                  var uid = user.uid;
+                  db.ref(`registeredUsers/${uid}`).once('value').then(function(snapshot){
+                    var data = snapshot.val();
+                  // console.log(uid)
+                  // console.log(data)
+            if(data.loggedin==true){
+                let log={
+                  loggedin:false,
+                }
+                db.ref('registeredUsers/'+uid).set(log);
+                window.location="login.html"
+            }    })}})}
+
+ 
+
+
+
+
+//.................table display..................
+function display(){
+                 firebase.auth().onAuthStateChanged((user) => {
+                          if (user){
+                                // console.log(user)
+                                var uid = user.uid;
+                                db.ref(`registeredUsers/${uid}`).once('value').then(function(snapshot)
+                                {
+                                var data = snapshot.val();
+                                let html_data=""
+  
+                                html_data=html_data+`<tr>
+                                <td>${data.username}</td>
+                                <td>${data.useremail}</td>
+                                <td><button onclick="del('${data.useremail}')">&#128465</button></td>
+                                <td><button onclick="editData('${data.useremail}')">&#x270E;</button></td>
+                                        `
+                                document.getElementById("table_update").innerHTML=html_data
+
                                 }
-                            })
+                              )
+                            }
+                          }
+                        )
+                      }
+
+
+
+
+//.............secure................
+
+function secure(){
+  firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      // console.log(user)
+      var uid = user.uid;
+      db.ref(`registeredUsers/${uid}`).once('value')
+      .then(function(snapshot){
+                              var data = snapshot.val();
+                                          // console.log(uid)
+                                         // console.log(data)
+                              if(data.loggedin==false)
+                              {
+                              window.location="login.html";
+                              }
+                              }
+                              )
+                            }
+                          }
+                        )
+                      }
+
+
+
+
+                      function frontlog(){
+                        window.location="login.html"
+                    }
+                    
+                    function frontreg(){
+                        window.location="reg.html"
                     }

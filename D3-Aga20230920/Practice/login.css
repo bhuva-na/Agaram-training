@@ -1,0 +1,36 @@
+/* .....................login css.......... */
+
+#loginForm{
+    border: 1px solid black;
+    margin-top:3%;
+    margin-left: 20%;
+    margin-right:20%;
+  
+    height:500px;
+    padding:7% 18% 2% 18%;
+   
+    opacity:10;
+}
+
+#loginForm label{
+    /* display: block; */
+    margin-top:3%;
+    color:bisque;
+    text-transform:uppercase;
+}
+.section{
+    background-image:url(../Practice/27230.jpg);
+    background-size: cover;
+    height: 400px;
+    opacity:-5;
+}
+#loginForm input{
+    display:block;
+    margin-top:3%;
+   
+}
+
+#loginForm button{
+    margin-top:6%;
+}
+

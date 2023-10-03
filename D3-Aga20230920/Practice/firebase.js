@@ -22,8 +22,8 @@ firebase.initializeApp(firebaseConfig);
 // reference your database
                   var db = firebase.database();
                   var dataRef = db.ref("registeredUsers");
-
-
+                  var auth=firebase.auth();
+                  console.log(auth)
 // ........register.....................................................................
                    
           function submitForm()
@@ -251,9 +251,7 @@ function secure()
 // ......already register...
 
 
-function already(u_name,u_email){
-        
-}
+
 
                
 
