@@ -77,7 +77,8 @@ const loginForm=()=>{
      
        window.location="home.html"
      ;
-    }) 
+    }
+    ) 
     .catch((error) => {
       alert("register first/invalid details")
       console.log(error.code);
@@ -119,21 +120,27 @@ const loginForm=()=>{
             function but2()
             {
               firebase.auth().onAuthStateChanged((user) => {
-                if (user) {
-                 
-                  // console.log(user)
+                if (user){
+                 // console.log(user)
                   var uid = user.uid;
                   db.ref(`registeredUsers/${uid}`).once('value').then(function(snapshot){
                     var data = snapshot.val();
                   // console.log(uid)
                   // console.log(data)
-            if(data.loggedin==true){
-                let log={
-                  loggedin:false,
+                          if(data.loggedin==true)
+                          {
+                          let log={
+                              loggedin:false,
+                                 }
+                          db.ref('registeredUsers/'+uid).set(log);
+                          window.location="login.html"
+                          } 
+                          }
+                        )
+                      }
+                    }
+                  )    
                 }
-                db.ref('registeredUsers/'+uid).set(log);
-                window.location="login.html"
-            }    })}})}
 
  
 

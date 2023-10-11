@@ -16,7 +16,8 @@ const firebaseConfig = {
   
 // initialize firebase
 firebase.initializeApp(firebaseConfig);
- 
+// const app = initializeApp(firebaseConfig);
+
  
  
 // reference your database
@@ -249,7 +250,6 @@ function secure()
 
 
 // ......already register...
-
 
 
 
