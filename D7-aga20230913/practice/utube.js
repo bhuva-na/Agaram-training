@@ -208,7 +208,7 @@ function tabledel(todel,p_data){
 //     }
   
 function submt(){
-    // alert(1)
+    alert(1)
    let username="Bhuvana";
     $.ajax({
         type:"POST",
@@ -259,7 +259,7 @@ function gettingData(){
                 <td><button type="button" style="background_color:black;" onclick="gettingDataOfId(${datas[i].id})">${datas[i].id}</button></td>
                 <td>${datas[i].user}</td>
                 <td><button onclick="deletingData('${datas[i].id}')">&#128465</button></td>
-                <td><a href="file:///home/bhuvaneshwari/Agaram/D5-Aga20231009/practice/makeup.html?id=${datas[i].id}">Link</a></td>
+                <td><a href="file:///home/bhuvaneshwari/Agaram/D7-aga20230913/practice/utube.html?id=${datas[i].id}">Link</a></td>
                 </tr>
                 `
 
@@ -333,7 +333,7 @@ function gettingDataOfId(id){
             for(i=0;i<datas.length;i++){
                if(datas[i].id==id){
                 $("#id_detail").html(datas[i].data,undefined,2)
-                idDetail=idDetail+ `<a type="button" href="file:///home/bhuvaneshwari/Agaram/D5-Aga20231009/practice/makeup.html?id=${datas[i].id}">link</a>`
+                idDetail=idDetail+ `<a type="button" href="file:///home/bhuvaneshwari/Agaram/D5-Aga20231009/practice/utube.html?id=${datas[i].id}">link</a>`
                }
 
             }
@@ -393,7 +393,7 @@ function valueAssign(id){
            let phone=ArrayDetails.phonenumber;
            let github=`<a href=${ArrayDetails.github}>Githublink</a>`
                     $("#name").html(name)
-                    $("#email").html(Email)
+                    // $("#email").html(Email)
                     $("#email").html(Email)
                     $("#phonenumber").html(phone)
                     $("#github").html(github)
@@ -405,24 +405,37 @@ function valueAssign(id){
                     $("#date").html(date)
                     let education=""
                             for(i=0;i<Edu.length;i++){
-                                    education=education+`<li>${Edu[i].edu_level }</li>
-                                    <p>${ Edu[i].edu_name}</p>
-                                    <p>${ Edu[i].edu_year}</p>
-                                    <p>${ Edu[i].edu_percentage}</p>`
-        
+                                    education=education+`<div>
+                                    <div  id="eduyear"></div>
+                                    <div class="content">
+                                    <ul>
+                                        <li><p>${Edu[i].edu_level }</p></li>
+                                    </ul>
+                                        <p>(Institution Name)::${ Edu[i].edu_name}</p>
+                                        <p>(Percentage)::${ Edu[i].edu_percentage}</p>
+                                
+                                    </div>`
+                                    // $("#eduyear").html(Edu[i].edu_year)
+                                    // $("#edu_name").html(Edu[i].edu_name)
+                                    // $("#edu_per").html(Edu[i].edu_percentage)
         
                             }
                             $("#edu").html(education)
+                         
                             let projects=""
                             let projts=ArrayDetails.project;
                             // console.log(projts)
                             for(i=0;i<projts.length;i++){
-                                projects=projects+`<li><h3>${projts[i].project_name }</h3></li>
-                                <li>FRONTEND</li>
-                                <li><h4>${ projts[i].frontEnd}</h4></li>
-                                <li>BACKEND</li>
-                                <li><h4>${ projts[i].BackEnd}</h4></li>
-                                <li><h4>${ projts[i].project_level}</h4></li>`
+                                projects=projects+`<div>
+                                <div  id="eduyear"></div>
+                                <div class="content">
+                                <ul>
+                                    <li><p>${projts[i].project_name }</p></li>
+                                </ul>
+                                    <p>(Frount End)::${ projts[i].frontEnd}</p>
+                                    <p>(Back End)::${ projts[i].BackEnd}</p>
+                                    <p>(project Level)::${ projts[i].project_level}</p>
+                                </div>`
         
         
                         }
@@ -435,7 +448,17 @@ function valueAssign(id){
                         }
 
              $("#skills").html(skillList)
-        
+                    
+             
+             
+             let lang=ArrayDetails.LanguageKnow;
+             // console.log(skills)
+             let laglist=""
+             for(i=0;i<lang.length;i++){
+                 laglist=laglist+`<li>${lang[i]}</li>`
+             }
+
+  $("#LanguageKnow").html(laglist)
             
             
                    
@@ -455,7 +478,7 @@ function valueAssign(id){
 
                     $("#edu").html(education)
                     $("#name").html(name)
-                    $("#email").html(Email)
+                    $("#address").html(personal_Details.Address)
                     $("#email").html(Email)
                     $("#pro").html(projects)
                     $("#obj").html(objective)
