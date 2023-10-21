@@ -259,7 +259,7 @@ function gettingData(){
                 <td><button type="button" style="background_color:black;" onclick="gettingDataOfId(${datas[i].id})">${datas[i].id}</button></td>
                 <td>${datas[i].user}</td>
                 <td><button onclick="deletingData('${datas[i].id}')">&#128465</button></td>
-                <td><a href="file:///home/bhuvaneshwari/Agaram/D7-aga20230913/practice/utube.html?id=${datas[i].id}">Link</a></td>
+                <td><a href="file:///home/bhuvaneshwari/Agaram/D9-Aga20230916/template.html?id=${datas[i].id}">Link</a></td>
                 </tr>
                 `
 
@@ -330,14 +330,22 @@ function gettingDataOfId(id){
             let datas=received_data.data;
             // console.log(datas)
             let idDetail=""
+            let templateId=""
             for(i=0;i<datas.length;i++){
                if(datas[i].id==id){
                 $("#id_detail").html(datas[i].data,undefined,2)
-                idDetail=idDetail+ `<a type="button" href="file:///home/bhuvaneshwari/Agaram/D9-Aga20230916/utube.html?id=${datas[i].id}">link</a>`
-               }
+                idDetail=idDetail+ `<a type="button" href="file:///home/bhuvaneshwari/Agaram/D9-Aga20230916/template.html?id=${datas[i].id}">link</a>`
+                
+                templateId=templateId+`<li><a class="navbar-brand" href="file:///home/bhuvaneshwari/Agaram/D7-aga20230913/practice/utube.html?id=${datas[i].id}" style="color: bisque;"><img style="width:150px; height:200px;" src="temp1.png"></a></li>
+            <li><a class="navbar-brand" href="file:///home/bhuvaneshwari/Agaram/D9-Aga20230916/resumetem.html?id=${datas[i].id}" style="color: bisque;margin-left: 2%;"><img style="width:150px;height:200px" src="temp2.png"></a></li>
+            <li><a class="navbar-brand" href="file:///home/bhuvaneshwari/Agaram/D9-Aga20230916/template3.html?id=${datas[i].id}" style="color: bisque;margin-left: 2%;"><img style="width:150px;height:200px" src="temp3.png"></a></li>
+            <li><a class="navbar-brand" href="file:///home/bhuvaneshwari/Agaram/D9-Aga20230916/template4.html?id=${datas[i].id}" style="color: bisque;margin-left: 2%;"><img style="width:150px;height:200px" src="temp4.png"></a></li>`
+
+            }
 
             }
             $("#detaildisplay").html(idDetail)
+            $("#template").html(templateId)
         },
         error:function(err){
             console.log("error",err)
@@ -409,10 +417,10 @@ function valueAssign(id){
                                     <div  id="eduyear"></div>
                                     <div class="content">
                                     <ul>
-                                        <li><p>${Edu[i].edu_level }</p></li>
+                                        <li><h3>${Edu[i].edu_level }</h3></li>
                                     </ul>
-                                        <p>(Institution Name)::${ Edu[i].edu_name}</p>
-                                        <p>(Percentage)::${ Edu[i].edu_percentage}</p>
+                                        <h4 style="margin-left:3%">Institution Name::${ Edu[i].edu_name}</h4>
+                                        <p style="margin-left:3%">Percentage::${ Edu[i].edu_percentage}</p>
                                 
                                     </div>`
                                     // $("#eduyear").html(Edu[i].edu_year)
@@ -430,11 +438,11 @@ function valueAssign(id){
                                 <div  id="eduyear"></div>
                                 <div class="content">
                                 <ul>
-                                    <li><p>${projts[i].project_name }</p></li>
+                                    <li><h3>${projts[i].project_name }</h3></li>
                                 </ul>
-                                    <p>(Frount End)::${ projts[i].frontEnd}</p>
-                                    <p>(Back End)::${ projts[i].BackEnd}</p>
-                                    <p>(project Level)::${ projts[i].project_level}</p>
+                                    <p style="margin-left:3%">Frount End::${ projts[i].frontEnd}</p>
+                                    <p style="margin-left:3%">Back End::${ projts[i].BackEnd}</p>
+                                    <p style="margin-left:3%">project Level::${ projts[i].project_level}</p>
                                 </div>`
         
         

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container" style="margin-left:20%;">
+        <form>
+            <h1 style="margin-left:25%; text-transform: uppercase;">resume Builder</h1>
+            <div class="mb-3 row mt-5">
+                <label class="col-sm-1 col-form-label" style="text-transform: uppercase;">name</label>
+                <div class="col-sm-8 ">
+                <input type="text" class="form-control"  name="name" value="" onkeyup="forSingleMulitiEvents(this)">
+                </div>
+            </div>
+            <div class="mb-3 row mt-3">
+                <label class="col-sm-1 col-form-label" style="text-transform: uppercase;">Email</label>
+                <div class="col-sm-8 ">
+                <input type="text" class="form-control"   name="email" value="" onkeyup="forSingleMulitiEvents(this)">
+                </div>
+            </div>
+            <div class="mb-3 row mt-3">
+                <label class="col-sm-1 col-form-label" style="text-transform: uppercase;">phonenumber</label>
+                <div class="col-sm-8 ms-5 ">
+                <input type="text" class="form-control"   name="phonenumber" value="" onkeyup="forSingleMulitiEvents(this)">
+                </div>
+            </div>
+            
+            <div class="input-group mt-4">
+                <span class="input-group-text">objective</span>
+                <textarea class="form-control" aria-label="With textarea" value="" name="objective" onkeyup="forSingleMulitiEvents(this)"></textarea>
+            </div>
+            <div class="mb-3 row mt-3">
+                <label class="col-sm-1 col-form-label" style="text-transform: uppercase;">Skills</label>
+                <div class="col-sm-3 ms-5">
+                    <input type="text" class="form-control" id="skills"  name="skills" value="" onkeyup="">
+                    <button type="button" class="btn btn-success mb-2 mt-2" onclick="forMulitiData('skill','skills')">ADD</button>  
+                </div>
+                <div class="d-flex flex-row  border" style="height:80px; width: 400px;">
+                    <div class="" id="skill">
+                </div>
+            </div>
+            <div class="mb-3 row mt-3">
+                <label class="col-sm-1 col-form-label" style="text-transform: uppercase;">LanguageKnow</label>
+                <div class="col-sm-3 ms-5">
+                    <input type="text" class="form-control" id="languages"  name="languages" value="" onkeyup="">
+                    <button type="button" class="btn btn-success mb-2 mt-2" onclick="forMulitiData('LanguageKnow','languages')">ADD</button>  
+                </div>
+                <div class="d-flex flex-row  border" style="height:80px; width: 400px;">
+                    <div class="" id="LanguageKnow">
+                </div>
+            </div>
+            
+            <div class="row">
+                <h3>personal Details</h3>
+                <div class="mb-3 row mt-3">
+                    <label class="col-sm-1 col-form-label" style="text-transform: uppercase;">Fathername</label>
+                    <div class="col-sm-8 ms-5 ">
+                    <input type="text" class="form-control"   name="Father_name" value="" onkeyup="forSingleMulitiEvents(this,'personal_Details')">
+                    </div>
+                </div>
+                <div class="mb-3 row mt-3">
+                    <label class="col-sm-1 col-form-label" style="text-transform: uppercase;">mothername</label>
+                    <div class="col-sm-8 ms-5 ">
+                    <input type="text" class="form-control"   name="mother_name" value="" onkeyup="forSingleMulitiEvents(this,'personal_Details')">
+                    </div>
+                </div>
+                <div class="mb-3 row mt-3">
+                    <label class="col-sm-1 col-form-label" style="text-transform: uppercase;">marital status</label>
+                    <div class="col-sm-8 ms-5 ">
+                    <input type="text" class="form-control"   name="marital_status" value="" onkeyup="forSingleMulitiEvents(this,'personal_Details')">
+                    </div>
+                </div>
+                <div class="mb-3 row mt-3">
+                    <label class="col-sm-1 col-form-label" style="text-transform: uppercase;">Gender</label>
+                    <select class="form-select" aria-label="Default select example"value="" name="Gender" onchange="forSingleMulitiEvents(this,'personal_Details')" >
+                        <option selected>select your Gender</option>
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                        <option value="others">others</option>
+                    </select>
+                </div>
+                <div class="mb-3 row mt-3">
+                    <label class="col-sm-1 col-form-label" style="text-transform: uppercase;">Address</label>
+                    <div class="col-sm-8 ms-5 ">
+                    <!-- <input type="text" class="form-control"   name="mother_name" value="" onkeyup="forSingleMulitiEvents(this,'personal_Details')"> -->
+                    <textarea class="form-control" aria-label="With textarea" value="" name="Address" onkeyup="forSingleMulitiEvents(this,'personal_Details')"></textarea>
+
+                </div>
+                <div class="mb-3 row mt-3">
+
+                <label  class="col-sm-3 col-form-label mt-1">Date_of_birth</label>
+                        <div class="col-sm-10">
+                            <input type="date" class="form-control mt-2" value="" name="Date_of_birth" onchange="forSingleMulitiEvents(this,'personal_Details')">
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <h3>Education</h3>
+                <div class="row">
+                    <div class="col-2">
+                        <input type="text" id="edu_name" name="edu_name" class="form-control"  onkeyup="handleMulArraydata(this)"  placeholder="Institution_name"/>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="edu_level" name="edu_level" class="form-control"  onkeyup="handleMulArraydata(this)" placeholder="level"/>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="edu_year" name="edu_year" class="form-control" onkeyup="handleMulArraydata(this)" placeholder="year"/>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="edu_percentage" name="edu_percentage" class="form-control" onkeyup="handleMulArraydata(this)" placeholder="percentage"/>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" id="edu_details" name="edu_details" class="btn btn-success mb-2 mt-2" onclick="forMulitiData('Education')">ADD</button>
+                        <!-- <div class="  border" style="height: 296px;width: 400px;"> -->
+                             
+                            <table class="table table-dark">
+                                <thead>
+                                    <th>Institution name</th>
+                                    <th>Institution level</th>
+                                    <th>Institution year</th>
+                                    <th>Institution percentage</th>
+                                    <th>TODELETE</th>
+                                </thead>
+                                <tbody id="Education" class="flex-row">
+
+                                </tbody>
+                            </table>
+                                  
+                            <!-- </div> -->
+                                
+                        </div>         
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <h3>project</h3>
+                    <div class="col-2">
+                        <input type="text" id="project_name" name="project_name" class="form-control"  onkeyup="handleMulArraydata(this)"  placeholder="project_name"/>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="frontEnd" name="frontEnd" class="form-control"  onkeyup="handleMulArraydata(this)" placeholder="frontEnd"/>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="BackEnd" name="BackEnd" class="form-control" onkeyup="handleMulArraydata(this)" placeholder="BackEnd"/>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="project_level" name="project_level" class="form-control" onkeyup="handleMulArraydata(this)" placeholder="project_level"/>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" id="edu_details" name="projects" class="btn btn-success mb-2 mt-2" onclick="forMulitiData('project')">ADD</button>
+                        <!-- <div class="d-flex flex-row  border" style="height:248px; width: 400px;"> -->
+                             
+                            <table class="table table-dark">
+                                <thead>
+                                    <th>project title</th>
+                                    <th>project frontEnd</th>
+                                    <th>project BackEnd</th>
+                                    <th>project level</th>
+                                    <th>TODELETE</th>
+                                </thead>
+                                <tbody id="project" class="flex-row">
+
+                                </tbody>
+                            </table>
+                              
+                                
+                            <!-- </div>          -->
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3 row mt-5">
+                <label class="col-sm-2 col-form-label" style="text-transform: uppercase;">Githublink</label>
+                <div class="col-sm-8 ">
+                <input type="link" class="form-control mt-2" value="" name="github" onchange="forSingleMulitiEvents(this)">
+
+                </div>
+            </div>
+            <div class="mb-3 row mt-5">
+                <label class="col-sm-2 col-form-label" style="text-transform: uppercase;">Declaration</label>
+                <div class="col-sm-8 ">
+                <textarea class="form-control" aria-label="With textarea" value="" name="Declaration" onkeyup="forSingleMulitiEvents(this)"></textarea>
+                </div>
+            </div>
+            <div class="mb-3 row mt-5">
+                <label class="col-sm-2 col-form-label" style="text-transform: uppercase;">Date</label>
+                <div class="col-sm-8 ">
+                <input type="date" class="form-control mt-2" value="" name="date" onchange="forSingleMulitiEvents(this)">
+
+                </div>
+            </div>
+        <div  class="row alert alert-danger" style="margin-top:150px;">
+            <code><pre id="display">
+
+            </pre></code>
+        </div>
+        
+        <div class="col-12" style="margin-left: 300px;">
+            <button class="btn btn-primary" type="button" onclick="submt()">Submit form</button>
+           
+        </div>
+       
+        </form>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="utube.js"></script>
+</html>

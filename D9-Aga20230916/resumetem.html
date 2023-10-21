@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link src="resumetem.css" rel="stylesheet">
+</head>
+<body style="padding:0px 248px;">
+    <div class="" style="height:1225px; border: 2px solid black; ">
+    <div class="container-fluid border" style="height:152px;position: relative;background-color: #e3d9d0;">
+        <!-- <div class="border" style="margin-top:4%;height:200px;"> -->
+            
+            <div class="container-fluid "  style="position: absolute;right:16%;top:103%;width: 50%; ">
+                <h5 style="text-transform: uppercase;">Education</h5>
+                <hr>
+                <p id="edu"></p>
+                <h5 style="text-transform: uppercase;">Projects</h5>
+                <hr>
+                <p id="pro"></p>
+                <h5 style="text-transform: uppercase;">Declaration</h5>
+                <hr>
+                <p id="declare"></p>
+                <h5 style="text-transform: uppercase;">Date</h5>
+              
+                <p id="date"></p>
+            </div>
+        <!-- </div> -->
+        <div class="container-fluid" style="position: absolute;right:-34%;margin-top: 3%;">
+        <h1 id="name"  style="color:black;font-size:4rem;"> Bhuvana</h1>
+        <h3 id="position">Fresher</h3>
+        </div>
+        
+<div class="container-fluid " style="   position:  absolute;left: 0; width: 250px; height:1218px;background-color:#a89e96; padding:0px 9px ;">
+
+    <div class="container-fluid" style="width:100%;margin-top: 2%;margin-left:0%;margin-right:0;">
+        <img src="........" style="border:2px solid white;width:55%; margin-left: 18%;">
+        <div class="resume_item resume_address">
+            <h6 class="resume_title" style="text-align: center;margin-top: 7%;background-color:#e3d9d0;text-transform:uppercase;">Objective</h6>
+            <div class="resume_info" id="obj" >
+                
+            </div>
+        <h6 class="border" style="text-transform:uppercase;margin-top:12%;margin-left:-2%;text-align: center;background-color:#e3d9d0;">Contact</h6>
+        <div class="resume_info">
+            <div class="resume_subtitle">Phone</div>
+            <div class="resume_subinfo" id="phonenumber"></div>
+        </div>
+        <div class="resume_info">
+            <div class="resume_subtitle" >Email</div>
+            <div class="resume_subinfo" id="email">rosiejack@gmail.com</div>
+        </div>
+        <div class="resume_item resume_address">
+            <h6 class="resume_title border" style="text-align: center;margin-top: 7%;background-color:#e3d9d0;text-transform:uppercase;">Address</h6>
+            <div class="resume_info" id="address" >
+                
+            </div>
+        </div>
+       
+        <div class="resume_item resume_address">
+            <h6 class="resume_title border" style="text-align: center;margin-top: 7%;background-color:#e3d9d0;text-transform:uppercase;">LanguageKnow</h6>
+            <div class="resume_info" id="LanguageKnow">
+                
+            </div>
+        </div>
+        <div class="resume_item resume_skills">
+            <h6 class="resume_title border" style="text-align: center;margin-top: 7%;background-color:#e3d9d0;text-transform:uppercase;">Skills</h6>
+            <div class="resume_info">
+                <div class="skills_list">
+                    <div class="skills_left" id="skills"></div>
+                    
+                </div>
+    </div>
+    
+</div>
+<div class="resume_item resume_skills">
+    <h6 class="resume_title border" style="text-align: center;margin-top: 7%;background-color:#e3d9d0;text-transform:uppercase;">personalDetails</h6>
+    <div class="resume_info">
+        <div class="skills_list">
+            <div class="skills_left" id="skills1"></div>
+            
+        </div>
+</div>
+
+</div>
+    </div>
+    </div>
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../D7-aga20230913/practice/utube.js"></script>
+<script type="text/javascript"> 
+    var id = getUrlParameter('id');
+       console.log(JSON.parse(id))
+    $(document).ready(function(){
+        valueAssign(id)
+      })
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

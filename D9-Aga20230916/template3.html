@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Orbit - Bootstrap 5 Resume/CV Template for Developers</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="orbit-1.css">
+</head> 
+
+<body>
+    <div class="wrapper mt-lg-5">
+        <div class="sidebar-wrapper">
+            <div class="profile-container">
+                <img class="profile" src="assets/images/profile.png" alt="" />
+                <h1 class="name" id="name"></h1>
+                <h3 class="tagline" id="position"></h3>
+            </div><!--//profile-container-->
+            <div class="education-container container-block">
+                <h2 class="container-block-title">Objective</h2>
+                <hr>
+                <div class="item">
+                    <p id="obj"></p>
+                </div><!--//item-->
+                <!--//item-->
+            </div><!--//education-container-->
+            <div class="contact-container container-block">
+                <h2 class="container-block-title">Contacts</h2>
+                <hr>
+                <ul class="list-unstyled contact-list">
+                    <li class="email"><i class="fa-solid fa-envelope"></i><a href="mailto: yourname@email.com" id="email"></a></li>
+                    <li class="phone"><i class="fa-solid fa-phone"></i><a  id="phonenumber"></a></li>
+                    <li class="github"><i class="fa-brands fa-github"></i><a href="https://github.com/bhuva-na/Agaram-training" id="github" target="_blank">Githublink</a></li>
+                </ul>
+            </div><!--//contact-container-->
+            <div class="education-container container-block">
+                <h2 class="container-block-title">Address</h2>
+                <hr>
+                <div class="item">
+                    <p id="address"></p>
+                </div><!--//item-->
+                <!--//item-->
+            </div>
+            <div class="education-container container-block">
+                <h2 class="container-block-title">PersonalDetails</h2>
+                <hr>
+                <div class="item">
+                    <p id="skills1"></p>
+                </div><!--//item-->
+                <!--//item-->
+            </div><!--//education-container-->
+            
+            <div class="languages-container container-block">
+                <h2 class="container-block-title">Languages</h2>
+                <hr>
+                <ul class="list-unstyled interests-list" id="LanguageKnow">
+                    
+                </ul>
+            </div><!--//interests-->
+            
+            <div class="interests-container container-block">
+                <h2 class="container-block-title">Skills</h2>
+                <hr>
+                <ul class="list-unstyled interests-list" id="skills">
+                    
+                </ul>
+            </div><!--//interests-->
+            
+        </div><!--//sidebar-wrapper-->
+        
+        <div class="main-wrapper">
+            
+            <section class="section summary-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-user"></i></span>Education</h2>
+                <div class="summary">
+                    <p id="edu"></p>
+                </div><!--//summary-->
+            </section><!--//section-->
+            
+            <!-- <section class="section experiences-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-briefcase"></i></span>Experiences</h2>
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Lead Developer</h3>
+                            <div class="time">2023 - Present</div>
+                        </div>
+                        <div class="company">Startup Hubs, San Francisco</div>
+                    </div>
+                    <div class="details">
+                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</p>  
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Senior Software Engineer</h3>
+                            <div class="time">2018 - 2023</div>
+                        </div>
+                        <div class="company">Google, London</div>
+                    </div>
+                    <div class="details">
+                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>  
+                        
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">UI Developer</h3>
+                            <div class="time">2016 - 2018</div>
+                        </div>
+                        <div class="company">Amazon, London</div>
+                    </div>
+                    <div class="details">
+                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>  
+                    </div>
+                </div>-->
+                
+            </section>
+            
+            <section class="section projects-section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-archive"></i></span>Projects</h2>
+                <p id="pro"></p>
+            </section><!--//section-->
+            
+            <section class="skills-section section">
+                <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-rocket"></i></span>Declaration</h2>
+                <p id="declare"></p>
+                <h2 class="section-title" style="margin-top:7%;"><i class="fa-solid fa-rocket"></i>Date</h2>
+                <p  id="date"></p>
+                </div>  
+            <!-- </section>//skills-section-->
+            <!-- <section class="skills-section section"> -->
+                
+                </div>  
+            </section>
+            
+        </div><!--//main-body-->
+    </div>
+ 
+    <!-- <footer class="footer">
+        <div class="text-center"> -->
+            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <!-- <small class="copyright">Designed with <i class="fa-solid fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small> -->
+        <!-- </div>
+    </footer> -->
+        
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="utube.js"></script>
+<script type="text/javascript"> 
+    var id = getUrlParameter('id');
+       console.log(JSON.parse(id))
+    $(document).ready(function(){
+        valueAssign(id)
+        gettingDataOfId(id)
+      })
+    </script>
+</html> 
+

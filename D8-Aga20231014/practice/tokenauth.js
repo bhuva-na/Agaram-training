@@ -32,15 +32,15 @@ function submt(){
         url:"http://agaram.academy/api/action.php",
         data:{
             "request":"create_candidate",
-            "name":name,
-            "email":email,
-            "password":password,
-            "aadhar":aadhar,
-            "address":address,
-            "phone":phone,
-            "city":city,
-            "area":area,
-            "pin":pin,
+            Name:name,
+            Email:email,
+            Password:password,
+            Aadhar:aadhar,
+            Address:address,
+            Phone:phone,
+            City:city,
+            Area:area,
+            Pin:pin,
         
       },
            
@@ -65,13 +65,16 @@ function loginForm(){
         data:
             {
                 request:"candidate_login",
-                email : email,
-                password :password,
+                Email : email,
+                Password :password,
                
             },
         success:function(response){
             console.log("Responce",response)
-            window.location="hometoken.html"
+            let id=JSON.parse(response)
+            let user_id=id.data.id
+            window.location=`hometoken.html?id=`+user_id
+
         },
         error:function(err){
             console.log("error",err)
@@ -96,7 +99,26 @@ function allDetails(){
         success:function(responce){
             console.log("Responce",responce)
 
-          
+         
+            let id=JSON.parse(responce)
+            let userdetailss=id.data
+
+            let userdetails=""
+        for(i=0;i<userdetailss.length;i++){
+            userdetails=userdetails+`<tr>
+            <td>${userdetailss[i].id}</td>
+            <td>${userdetailss[i].name}</td>
+            <td>${userdetailss[i].email}</td>
+            <td>${userdetailss[i].aadhar}</td>
+            <td>${userdetailss[i].address}</td>
+            <td>${userdetailss[i].phone}</td>
+            <td>${userdetailss[i].city}</td>
+            <td>${userdetailss[i].area}</td>
+            <td>${userdetailss[i].pin}</td>`
+           
+           
+        }
+        document.getElementById("tbody").innerHTML=userdetails;
           
           
            
@@ -126,3 +148,11 @@ var getUrlParameter = function getUrlParameter(sParam) {
     }
     return false;
 };
+
+function valueAssign(id){
+    
+    // console.log(id)
+   
+    
+}
+
