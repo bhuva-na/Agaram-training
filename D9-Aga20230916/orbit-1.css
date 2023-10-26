@@ -52,7 +52,7 @@ body {
   .sidebar-wrapper {
     background: #A15277;
     position: absolute;
-    right: 0;
+    right: 1px;
     width: 289px;
     height: 100%;
     min-height: 800px;
@@ -156,6 +156,7 @@ body {
     background: #fff;
     padding: 60px;
     padding-right: 300px;
+    width:62%;
   }
   .main-wrapper .section-title {
     text-transform: uppercase;

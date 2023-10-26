@@ -1,0 +1,19 @@
+18
+56/home/bhuvaneshwari/Agaram/es6-localproject/package.json1698302728785779753 0
+54/home/bhuvaneshwari/Agaram/es6-localproject/index.html1698302662833602008 0
+66/home/bhuvaneshwari/Agaram/es6-localproject/node_modules/@mischnic1698246489025244534 1
+103/home/bhuvaneshwari/Agaram/es6-localproject/node_modules/.bin/node-gyp-build-optional-packages-optional1698232956462385307 0
+63/home/bhuvaneshwari/Agaram/es6-localproject/node_modules/@lezer1698246489029243293 1
+66/home/bhuvaneshwari/Agaram/es6-localproject/node_modules/@trysound1698246489029243293 1
+99/home/bhuvaneshwari/Agaram/es6-localproject/node_modules/.bin/node-gyp-build-optional-packages-test1698232956462385307 0
+56/home/bhuvaneshwari/Agaram/es6-localproject/node_modules1698302516432756049 1
+63/home/bhuvaneshwari/Agaram/es6-localproject/node_modules/@babel1698246489257172577 1
+64/home/bhuvaneshwari/Agaram/es6-localproject/node_modules/@parcel1698246489265170095 1
+75/home/bhuvaneshwari/Agaram/es6-localproject/node_modules/.package-lock.json1698302516436758525 0
+94/home/bhuvaneshwari/Agaram/es6-localproject/node_modules/.bin/node-gyp-build-optional-packages1698232956462385307 0
+61/home/bhuvaneshwari/Agaram/es6-localproject/package-lock.json1698302516436758525 0
+85/home/bhuvaneshwari/Agaram/es6-localproject/node_modules/.bin/download-lmdb-prebuilds1698232956486383771 0
+61/home/bhuvaneshwari/Agaram/es6-localproject/node_modules/@swc1698246489209187464 1
+61/home/bhuvaneshwari/Agaram/es6-localproject/node_modules/.bin1698246488041551460 1
+43/home/bhuvaneshwari/Agaram/es6-localproject1698302651519730562 1
+89/home/bhuvaneshwari/Agaram/es6-localproject/node_modules/.bin/download-msgpackr-prebuilds1698232956458385564 0
