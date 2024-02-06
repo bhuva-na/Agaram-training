@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+</head>
+<body>
+    <h1>Home Page</h1>
+    {%if username%}
+        <p>hello,{{username}} ! You are already logged in.</p>
+        <a href="/logout">logout</a>
+    {%else%}
+        <p>You are not logged in.please <a href="/login">login</a>to access the home page.</p>
+        <br/>
+        <p>If you didn't have account yet <a href="/register">register here</a></p>
+    {%endif%}
+
+</body>
+</html>
