@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>todo</title>
 </head>
-<body >
+<body>
     <form  action="/todo"  method="POST" style="text-align: center;">
     <h1>TODO LIST</h1>
     <ol>
         {% for i in range(item_list|length)%}
-        <li><a href="/delete/{{item_list[i]}}">X.</a>{{item_list[i]}}
-
-    <a href="/update/{{i}}">update</a></li>
+            <li>
+                <a href="/delete/{{item_list[i]}}">X.</a>
+                    {{item_list[i]}}
+                <a href="/update/{{i}}">update</a>
+            </li>
         {%endfor%}
     </ol>
-   
-    <label>Todolist:</label>
-    <input type="text" name="item_name"/>
-    <input type="submit" value="submit"/>
+<label>Todolist:</label>
+<input type="text" name="item_name"/>
+<input type="submit" value="submit"/>
 </form>
 </body>
 </html>
+
