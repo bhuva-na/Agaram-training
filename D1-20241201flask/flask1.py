@@ -1,6 +1,6 @@
 from flask import Flask,request
 from flask import render_template
-from flask_cors   import CORS
+from flask_cors import CORS
 
 app=Flask(__name__)
 CORS(app)
@@ -8,12 +8,8 @@ CORS(app)
 lists=[]
 @app.route("/flask")
 
-
 def router():
     return "welcome to app hhh"
-
-
-
 
 
 @app.route("/welcome/<user>")
@@ -21,11 +17,10 @@ def rout(user):
     return user 
 
 
-
-
 @app.route("/contact")
 def routername():
     return render_template("home.html",name=["bhuvana","gayu","sangee","ajay","vicky","abinesh"])
+
 
 @app.route("/todo",methods=["GET","POST"])
 def todoitems():
